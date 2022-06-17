@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container calc">
+        <div class="window">
+            <input class="count" type="text">
+        </div>
+        <div class="calculator">
+            <div class="number">
+                <div class="text" id="AC" onclick="field.value = ''">C</div>
+            </div>
+                <button class="number" id="scob">
+                <p class="text">()</p>
+            </button>
+            <button class="number" id="slesh">
+                <p class="text">/</p>
+            </button>
+            <button class="number acolor" id="multiply">
+                <p class="text white">*</p>
+            </button>
+            <button class="number" id="seven">
+                <p class="text">7</p>
+            </button>
+            <button class="number" id="eight">
+                <p class="text">8</p>
+            </button>
+            <button class="number" id="nine">
+                <p class="text">9</p>
+            </button>
+            <button class="number acolor" id="minus">
+                <p class="text white">-</p>
+            </button>
+            <button class="number" id="four">
+                <p class="text">4</p>
+            </button>
+            <button class="number" id="five">
+                <p class="text">5</p>
+            </button>
+            <button class="number" id="six">
+                <p class="text">6</p>
+            </button>
+            <button class="number acolor" id="plus">
+                <p class="text white">+</p>
+            </button>
+            <button class="number" id="one">
+                <p class="text">1</p>
+            </button>
+            <button class="number" id="two">
+                <p class="text">2</p>
+            </button>
+            <button class="number" id="three">
+                <p class="text">3</p>
+            </button>
+            <div class="number equally acolor" id="equally">
+                <div class="text white equallytext" onclick="field.value = eval(field.value.replace('÷', '/').replace('×', '*'))">=</div>
+            </div>
+            <button class="number null" id="nol">
+                <p class="text nulltext">0</p>
+            </button>
+            <button class="number" id="point">
+                <p class="text">.</p>
+            </button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
